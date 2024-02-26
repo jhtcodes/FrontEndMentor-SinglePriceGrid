@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <style>
+    .join { grid-area: header; }
+    .subscription { grid-area: main; }
+    .why { grid-area: right; }
+
+    body{
+      background-color:hsl(204, 43%, 93%);
+      font-family: "Karla", sans-serif;
+      font-weight: 400px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .join{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 10px;
+    }
+
+    .subscribe {
+      background-color: hsl(179, 62%, 43%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .why {
+      background-color: hsl(179, 62%, 43%);
+      color: white; 
+      opacity: 0.9;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 10px;
+    }
+
+    h1 {
+      color: hsl(179, 62%, 43%);
+    }
+
+    .join h2 {
+      color: hsl(71, 73%, 54%);
+      font-size: 16px;
+    }
+
+    .join p{
+      color: hsl(218, 22%, 67%);
+      font-size: 14px;
+    }
+
+    .subscription {
+      font-weight: normal;
+    }
+
+    h3 {
+      font-size: 34px;
+      margin: 0;
+    }
+
+    span {
+      font-weight: 100;
+      font-size: 12px;
+    }
+    
+    .light-text {
+      font-weight: lighter;
+      margin-bottom: 30px;
+    }
+
+    button {
+      color: white;
+      background-color: hsl(71, 73%, 54%);
+      padding: 15px;
+      border: solid 1px hsl(71, 73%, 54%);
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+      font-family: "Karla", sans-serif;
+      font-weight: bold;
+    }
+
+    ul { 
+      list-style-type: none;
+      font-weight: 100;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media (min-width: 450px) {
+      main {
+        display: grid;
+        grid-template-areas: 'header header' 'main right';
+        margin: 30px;
+      }
+
+      .subscribe {
+        border-bottom-left-radius: 5px;
+      }
+
+      .why {
+        border-bottom-left-radius: 0;
+      }
+}
+  </style>
+</head>
+<body>
+<main>
+<section class="join">
+  <h1>Join our community</h1>
+
+ <h2>30-day, hassle-free money back guarantee</h2>
+
+  <p>Gain access to our full library of tutorials along with expert code reviews. 
+    Perfect for any developers who are serious about honing their skills.</p>
+</section>
+
+<section class="subscribe">
+  <h2 class="subscription">Monthly Subscription
+  </h2>
+    <h3>&dollar;29 <span>per month</span></h3>
+    <p class="light-text">Full access for less than &dollar;1 a day</p>
+  <button>Sign Up</button>
+</section>
+<section class="why">
+  <h2>Why Us</h2>
+
+  <ul>
+    <li>Tutorials by industry experts</li>
+    <li>Peer &amp; expert code review</li>
+    <li>Coding exercises</li>
+    <li>Access to our GitHub repos</li>
+    <li>Community forum</li>
+    <li>Flashcard decks</li>
+    <li>New videos every week</li>
+  </ul>
+</section>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">J Tran</a>.
+    </p>
+  </footer>
+</main>
+</body>
+</html>
