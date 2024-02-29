@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./mobile-screenshot.jpg)
-![](./desktop-screenshot.jpg)
+![](./mobile-screenshot.png)
+![](./desktop-screenshot.png)
 
 ### Built with
 
@@ -21,3 +21,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### Link to solution:
+https://jhtcodes.github.io/FrontEndMentor-SinglePriceGrid/
